@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+</head>
+<body>
+  <div>
+    <h1 id="title">Customer Response Form</h1>
+    <p id="description">Assist us to fill this form so as to improve our product your response matters alot</p>
+  <div>
+    
+  <section>
+      <form action="/customer" method="post">
+        <div>
+          <div>
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" placeholder="name" required>
+          </div>
+          <br>
+        <div>
+          <label for="email" id="email-label">Email</label>
+          <input id="email" type="email" placeholder="email" required>
+        </div>
+        <br>
+        <div>
+          <label for="number" id="number-label">Number</label>
+          <input id="number" type="number" placeholder="number" min="1" max="500" required>
+        </div>
+        <br>
+        </div>
+        
+        <div>
+          <p>1: Select your job status</p>
+          <label for="employment-data">Jobstatus</label>
+          <select id="employment-data" name="employment-data">
+            
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="freelancer">Freelancer</option>
+          </select>
+        </div>
+        
+        <div>
+          <p>2: Which of our services do you like the most(you can select all)</p>
+          <input id="service-1" type="checkbox" name="delivery">
+          <label for="service-1">Delivery</label>
+
+          <input type="checkbox" id="service-2" name="customer-careservices">
+          <label for="service-2">Customer-CareServices</label>
+
+          <input id="service-3" type="checkbox" name="userexperience">
+          <label for="service-3">User experience</label>
+        </div>
+        
+        <div>
+          <p>3: Which payment system in your opnion is safer to use</p>
+          <input id="option1" type="radio" name="shoppingsystem" value="card">
+          <label for="option1">Shop with card </label>
+          
+          <input id="option2" type="radio" name="shoppingsystem" value="paymentsystem">
+          <label for="option2">Ourpaymentsystem</label>
+        </div>
+        
+        <div>
+          <p>4:Would you recommend us to other people</p>
+         <input id="option3" type="radio" name="shopwithusagain" value="yes">
+         <label for="option3">Yes</label>
+         
+         <input id="option4" type="radio" name="shopwithusagain" value="no">
+         <label id="option4">No</label>
+        </div>
+        <br>
+        <div>
+          <label form="additional-comments">5: Additional Comments</label>
+          <textarea id="additional-comments" name="comments" rows="10" cols="30" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+  </form>
+  </section>
+</body>
+</html>
